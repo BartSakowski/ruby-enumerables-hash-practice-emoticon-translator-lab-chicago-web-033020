@@ -6,7 +6,7 @@ def load_library (path)
   # p "==============="
   emohash ={"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |word, emos|
-    emos1, emos2 = icons
+    emos1,emos2 = icons
     emohash["getting_meaning"][emos2] = word
     emohash["get_emoticon"][emos1] = word
   end
