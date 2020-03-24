@@ -24,7 +24,7 @@ end
 # end
 
 def get_japanese_emoticon(path, emoticon)
-load_library(path)
+emoticon = load_library(path)
 result=emoticons["get_emoticons"][emoticon]
 if result
   result
