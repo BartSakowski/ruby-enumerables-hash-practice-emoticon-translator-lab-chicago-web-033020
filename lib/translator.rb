@@ -1,7 +1,6 @@
 require "yaml"
 
 def load_library (path)
-  YAML.load_file(path)
   # p emoticons
   # p "==============="
   emohash ={"get_meaning" => {}, "get_emoticon" => {}}
