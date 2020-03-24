@@ -1,11 +1,11 @@
 require "yaml"
 
 def load_library (path)
-  emoticons = YAML.load_file(path)
+  YAML.load_file(path)
   # p emoticons
   # p "==============="
   emohash ={"get_meaning" => {}, "get_emoticon" => {}}
-  emoticons.each do |word, emos|
+  YAML.load_file(path).each do |word, emos|
     emos1,emos2 = emos
     emohash["getting_meaning"][emos2] = word
     emohash["get_emoticon"][emos1] = emos2
